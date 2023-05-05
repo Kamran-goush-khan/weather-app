@@ -69,13 +69,9 @@ export default function Body() {
         SEARCH
       </button>
 
-      <div className="container">
-
-      <div className="row">
-      <div className="col s12 weather-city">{data?.name}</div>
-      <div className="col s12 weather">{(data?.main?.temp - 273.15).toFixed(2)}°C</div>
-    </div>
-       
+     <div className="container">
+        <h5 className="weather-city">{data?.name}</h5>
+        <h5 className="weather">{(data?.main?.temp - 273.15).toFixed(2)}°C</h5>
       </div>
     </div>
   );
